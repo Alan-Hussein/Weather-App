@@ -9,13 +9,25 @@
   </head>
   <body>
     <div class="card">
+      <h1 class="weather-app">Weather App</h1>
       <div class="search">
-        <input class="search-bar" type="text" placeholder="Search..." />
+        <input class="search-bar" type="text" placeholder="Search location" autofocus  />
         <button type="submit">
           <img src="../src/assets/icon2.png" alt="" />
         </button>
       </div>
       <div class="loading"><h2>loading....</h2></div>
+      <div class="weather-information">
+        <h2 class="city"></h2>
+        <h1 class="temp"></h1>
+        <div class="weather-description">
+          <img src="" alt="" class="icon" />
+          <div class="description"></div>
+        </div>
+        <div class="humidity"></div>
+        <div class="wind"></div>
+      </div>
+    </div>
     </div>
   </body>
   <script src="../src/index.js"></script>
