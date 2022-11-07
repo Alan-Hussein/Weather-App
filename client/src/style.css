@@ -8,10 +8,11 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background-image: url("../src/assets/img5.jpg");
+  background-image: url("../src/assets/img2.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position-x: center;
+  background-position-y: bottom;
 }
 .card {
   background: #000000d0;
@@ -20,6 +21,7 @@ body {
   border-radius: 30px;
   width: 600px;
 }
+
 .weather-app {
   text-align: center;
   margin-bottom: 10px;
@@ -74,4 +76,18 @@ button:hover {
 }
 .temp {
   margin-top: 20px;
+}
+@media screen and (max-width: 600px) {
+  .card {
+    width: 80%;
+  }
+  .weather-app {
+    font-size: 28px;
+  }
+  .weather-information {
+    font-size: 16px;
+  }
+  .weather-description {
+    font-size: 15px;
+  }
 }
