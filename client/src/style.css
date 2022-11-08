@@ -34,8 +34,8 @@ body {
   justify-content: space-evenly;
 }
 button {
-  margin: 10px 25px;
-  border-radius: 50%;
+  margin: 10px 5px;
+  border-radius: 45%;
   border: none;
   height: 50px;
   width: 55px;
@@ -55,9 +55,6 @@ button:hover {
   color: white;
   width: 100%;
   font-size: 20px;
-}
-.hide {
-  display: none;
 }
 .weather-information {
   margin-top: 20px;

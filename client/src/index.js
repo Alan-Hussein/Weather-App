@@ -25,7 +25,7 @@ async function displayWeather(city) {
   const { temp, humidity } = weatherData.main;
   const { speed } = weatherData.wind;
   const cityName = document.querySelector(".city");
-  cityName.innerHTML = `weather in ${name}`;
+  cityName.innerHTML = `Weather in ${name}`;
   const tempElement = document.querySelector(".temp");
   tempElement.innerHTML = `${Math.round(temp)} °C`;
   const iconElement = document.querySelector(".icon");
@@ -42,8 +42,6 @@ function getCityName() {
   const search = document.querySelector(".search-bar");
   const btn = document.querySelector("button");
   btn.addEventListener("click", () => {
-    const loading = document.querySelector(".loading");
-    loading.classList.add("hide");
     city = search.value;
     displayWeather(city);
   });
